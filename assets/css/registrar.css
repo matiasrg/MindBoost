@@ -15,7 +15,7 @@
 
 body{
     min-height: 98vh;
-    background-image: url("../images/inicio-registrar/fondo.png");
+    background-image: url("assets/images/inicio-registrar/fondo.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -87,5 +87,6 @@ form{
     font-weight: 500;
     background-color: var(--color5-bg);
 }
+
 
 
