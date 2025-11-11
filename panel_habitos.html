@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="assets/css/panel_habitos.css">
+    <title>MindBoost - Tu bienestar mental</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo_container">
+            <img src="./assets/images/logo.png" alt="MindBoost - Logo de la aplicación para bienestar mental">
+        </div>
+        <h1>MindBoost</h1>
+    </header>
+
+    <nav class="navigation">
+      <ul class="menu_bar">
+        <li><a class="nav-link" href="./index.html">Inicio</a></li>
+        <li><a class="nav-link" href="./bienvenida.html">Bienvenida</a></li>
+        <li><a class="nav-link" href="./comunidad.html">Comunidad</a></li>
+        <li><a class="nav-link" href="./estadistica.html">Estadísticas</a></li>
+        <li><a class="nav-link" href="./formulario_emociones.html">Emociones</a></li>
+        <li><a class="nav-link" href="./panel_habitos.html">Hábitos</a></li>
+        <li><a class="nav-link" href="./recompensas.html">Recompensas</a></li>
+        <li><a class="nav-link" href="./inicio_sesion.html">Perfil</a></li>
+      </ul>
+    </nav>
+
+    <main>
+        <section class="header-content">
+            <h2>Panel de Habitos</h2>
+            <p class="frase">¡¡Guarda tus habitos para lograr tus metas academicas!!</p>
+        </section>
+
+        <section class="formulario">
+            <div class="escribe-nombre"> 
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Agrega un nombre a tu habito">
+            </div>
+            <div class="categoria"> 
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria" >
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="excelente">😴 Excelente</option>
+                    <option value="bueno">🙂 Bueno</option>
+                    <option value="regular">😐 Regular</option>
+                    <option value="malo">😕 Malo</option>
+                    <option value="muy_malo">😫 Muy malo</option>
+                </select>
+            </div>
+            <div class="frecuencia"> 
+                <label for="frecuencia">Frecuencia:</label>
+                <select id="frecuencia" name="frecuencia">
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="siempre"> Excelente</option>
+                    <option value="casi siempre"> Bueno</option>
+                    <option value="regular"> Regular</option>
+                    <option value="casi nunca"> Malo</option>
+                    <option value="nunca"> Muy malo</option>
+                </select>
+            </div>
+            
+            <div class="descripcion"> 
+                <label for="descripcion">Descripcion:</label>
+                <textarea id="descripcion" name="descripcion" placeholder="Describe de que trata tu habito..."></textarea>
+            </div>
+        </section>
+        <section class="botones">
+            <button class="ver-habitos">Ver Habitos</button>
+            <button class="agregar-habito">Agregar</button> 
+        </section>
+    </main>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </footer>
+</body>
+</html>

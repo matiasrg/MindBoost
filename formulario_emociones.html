@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindBoost - ¿Cómo te sientes?</title>
+  <link rel="stylesheet" href="assets/css/formulario_emociones.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo_container">
+      <img src="./assets/images/logo.png" alt="MindBoost - Logo">
+    </div>
+    <h1>MindBoost</h1>
+  </header>
+  
+    <nav class="navigation">
+      <ul class="menu_bar">
+        <li><a class="nav-link" href="./index.html">Inicio</a></li>
+        <li><a class="nav-link" href="./bienvenida.html">Bienvenida</a></li>
+        <li><a class="nav-link" href="./comunidad.html">Comunidad</a></li>
+        <li><a class="nav-link" href="./estadistica.html">Estadísticas</a></li>
+        <li><a class="nav-link" href="./formulario_emociones.html">Emociones</a></li>
+        <li><a class="nav-link" href="./panel_habitos.html">Hábitos</a></li>
+        <li><a class="nav-link" href="./recompensas.html">Recompensas</a></li>
+        <li><a class="nav-link" href="./inicio_sesion.html">Perfil</a></li>
+      </ul>
+    </nav>
+  
+  <main>
+    <section class="header-content">
+    <h2>¿Cómo te sentiste?</h2>
+    <p class="frase">“Reconocer tus emociones es el primer paso para cuidarte.”</p>
+    </section>
+    <section class="formulario-emociones">
+      <form>
+
+        <!-- Pregunta 1 -->
+        <label for="emoji" class="pregunta">Selecciona un emoji que describa cómo te sentiste ayer la mayor parte del tiempo:</label>
+        <div class="emoji-container">
+          <div class="emoji">
+            <img src="assets/images/formulario/feliz.png" alt="Feliz">
+            <p>Feliz</p>
+          </div>
+          <div class="emoji">
+            <img src="assets/images/formulario/triste.png" alt="Triste">
+            <p>Triste</p>
+          </div>
+          <div class="emoji">
+            <img src="assets/images/formulario/estresado.png" alt="Estresado">
+            <p>Estresado</p>
+          </div>
+          <div class="emoji">
+            <img src="assets/images/formulario/enojado.png" alt="Enojado">
+            <p>Enojado</p>
+          </div>
+          <div class="emoji">
+            <img src="assets/images/formulario/cansado.png" alt="Cansado">
+            <p>Cansado</p>
+          </div>
+          <div class="emoji">
+            <img src="assets/images/formulario/neutral.png" alt="Neutral">
+            <p>Neutral</p>
+          </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <label for="motivo" class="pregunta">¿Por qué te sentiste así?</label>
+        <textarea id="motivo" placeholder="Escribe aquí tu respuesta..."></textarea>
+
+        <!-- Pregunta 3 -->
+        <label for="energia" class="pregunta">Del 1 al 10, ¿cuál fue tu nivel de energía?</label>
+        <input type="range" id="energia" name="energia" min="1" max="10">
+        <div class="range-labels">
+          <span>Bajo</span>
+          <span>Alto</span>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="pregunta">
+          <p>¿Socializaste con alguien ayer?</p>
+          <label><input type="radio" name="socializar_ayer" value="si"> Sí</label>
+          <label><input type="radio" name="socializar_ayer" value="no"> No</label>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="pregunta">
+          <p>¿Te sentiste concentrado(a) en tus actividades?</p>
+          <label><input type="radio" name="concentracion_ayer" value="si"> Sí</label>
+          <label><input type="radio" name="concentracion_ayer" value="no"> No</label>
+        </div>
+
+        <!-- Pregunta 6 -->
+        <div class="pregunta">
+          <p>¿Tomaste iniciativa o fuiste proactivo(a)?</p>
+          <label><input type="radio" name="proactividad_ayer" value="si"> Sí</label>
+          <label><input type="radio" name="proactividad_ayer" value="no"> No</label>
+        </div>
+
+        <!-- Botón -->
+        <button type="submit" class="btn-guardar">GUARDAR REGISTRO</button>
+
+      </form>
+    </section>
+  </main>
+  <footer>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </footer>
+</body>
+</html>
