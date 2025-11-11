@@ -1,0 +1,220 @@
+:root {
+    --primary_color: #FFEAEA;
+    --secondary_color: #57142D;
+    --accent_color: #D19FA0;
+    --light_bg: #F0F1D6;
+    --text_color: #1A1A1D;
+    --light_text: #5D5D5D;
+    --white: #FFFFFF;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --border_radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary_color);
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: var(--text_color);
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+header {
+    width: 100%;
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+}
+
+header .logo_container {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo_container img {
+    width: 100%;
+    height: auto;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--secondary_color);
+    font-weight: 700;
+}
+
+.navigation {
+    width: 100%;
+    padding: 0 5%;
+    margin-top: 10px;
+}
+
+.menu_bar {
+    width: 100%;
+    height: auto;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondary_color);
+    border-radius: var(--border_radius);
+    flex-wrap: wrap;
+}
+
+.menu_bar li {
+    display: inline-block;
+}
+
+.nav-link {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover, .nav-link:focus {
+    background-color: var(--accent_color);
+    color: var(--white);
+}
+
+.main-content {
+    width: 100%;
+    padding: 30px 5%;
+    flex: 1;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.subtitulo {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--secondary_color);
+}
+
+.quote-container {
+    background-color: var(--light_bg);
+    padding: 20px;
+    border-radius: var(--border_radius);
+    box-shadow: var(--shadow);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.frase {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--light_text);
+}
+
+.quote-author {
+    text-align: right;
+    font-weight: 600;
+    color: var(--secondary_color);
+}
+
+.divider {
+    height: 2px;
+    width: 80%;
+    border: none;
+    background: linear-gradient(to right, transparent, var(--secondary_color), transparent);
+    margin: 30px auto;
+}
+
+.feature-article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.feature-article .image_container {
+    height: 300px;
+    width: 100%;
+    border-radius: var(--border_radius);
+    background-color: var(--light_bg);
+    background-image: url(../images/index-image.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: var(--shadow);
+}
+
+.feature-article .texto {
+    padding: 20px;
+    background-color: var(--light_bg);
+    border-radius: var(--border_radius);
+    box-shadow: var(--shadow);
+}
+
+.divider-small {
+    height: 1px;
+    width: 100%;
+    border: none;
+    background-color: var(--secondary_color);
+    margin: 20px 0;
+    opacity: 0.5;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.boton-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary_color);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 25px;
+    border: none;
+    border-radius: var(--border_radius);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+}
+
+.boton-info:hover, .boton-info:focus {
+    background-color: var(--accent_color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--secondary_color);
+    color: var(--white);
+    margin-top: 40px;
+}

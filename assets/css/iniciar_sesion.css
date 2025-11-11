@@ -1,0 +1,113 @@
+:root{
+  --color1-bg: #FFEAEA;
+  --color2-bg: #574142;
+  --color3-bg: #D19FA0;
+  --color4-bg: #F0F1D6;
+  --color5-bg: #B8B99F;
+  --text_color: #1A1A1D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image: url("../images/inicio-registrar/fondo.png");
+    /*background-color: var(--color1-bg);*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: var(--text_color);
+    line-height: 1.6;
+}
+.container{
+    border: 2px solid var(--color2-bg);
+    width: 90%;
+    max-width: 450px;
+    padding: 30px 40px;
+    border-radius: 10px;
+    color: var(--color2-bg);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+form a {
+    text-decoration: none;
+    color: var(--color2-bg)
+}
+
+.input-box{
+
+    border: 2px solid var(--color2-bg);
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.input-box input{
+    flex: 1;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    color: var(--color2-bg);
+}
+
+.input-box input::placeholder{
+    color: var(--color2-bg)
+
+}
+
+.remember-password{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.remember-password label{
+    display: flex;
+    align-items: center;
+}
+.remember-password input{
+    margin-right: 5px;
+}
+
+.btn{
+    border-radius: 10px;
+    border: 0;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: var(--color5-bg);
+}
+
+.register-link{
+    text-align: center;
+    font-size: 15px;
+}
+
+.register-link a{
+    margin-left: 8px;
+}
