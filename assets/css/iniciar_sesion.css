@@ -15,7 +15,7 @@
 
 body{
     height: 100vh;
-    background-image: url("../images/inicio-registrar/fondo.png");
+    background-image: url("assets/images/inicio-registrar/fondo.png");
     /*background-color: var(--color1-bg);*/
     background-size: cover;
     background-position: center;
@@ -110,4 +110,5 @@ form a {
 
 .register-link a{
     margin-left: 8px;
+
 }
